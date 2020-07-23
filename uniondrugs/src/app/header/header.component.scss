@@ -5,3 +5,19 @@
 .core-component {
   max-width: 1400px;
 }
+
+.contact-info.mr-auto ul li {
+  vertical-align: middle;
+  .icofont-envelope:before, .icofont-phone:before,
+  .icofont-clock-time:before,.icofont-building:before {
+    font-size: xx-large;
+    padding-right: 5px;
+  }
+  span {
+    display: inline-block;
+  }
+}
+
+#topbar .cta a {
+  padding: 20px 20px;
+}

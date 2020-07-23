@@ -1,15 +1,18 @@
 <section id="topbar" class="d-none d-lg-block">
   <div class="container d-flex">
     <div class="contact-info mr-auto">
-      <ul>
-        <li><i class="icofont-envelope"></i><a href="mailto:contact@example.com">contact@uniondrugs.us</a></li>
-        <li><i class="icofont-phone"></i> +1 980 320 1102</li>
-        <li><i class="icofont-clock-time icofont-flip-horizontal"></i> Mon-Fri 9am - 6pm | Sat 9am to 1pm</li>
-      </ul>
+     <ul>
+          <li>
+            <i class="icofont-envelope"></i><span><a href="mailto:uniondrugs@yahoo.com">uniondrugs@yahoo.com</a><br /><a
+                href="mailto:contact@example.com">contact@uniondrugs.us</a></span></li>
+          <li><i class="icofont-phone"></i> +1 980 320 1102</li>
+          <li><i class="icofont-clock-time"></i> <span>Mon-Fri : 9am - 6pm<br />Sat : 9am to 1pm</span></li>
+          <li><i class="icofont-building"></i><span>1546 Union Rd, Suite B<br />Gastonia, NC 28054</span></li>
+        </ul>
 
     </div>
     <div class="cta">
-      <a href="#about" class="scrollto">COVID-19 Resources</a>
+      <a [routerLink]="['/covid-19/']" class="scrollto">COVID-19 Resources</a>
     </div>
   </div>
 </section>
@@ -18,14 +21,16 @@
   <div class="container d-flex">
 
     <div class="logo mr-auto">
-      <h1 class="text-light"><a href="index.html"><span>Union Drugs</span></a></h1>
+      <!-- <h1 class="text-light"><a href="index.html"><span>Union Drugs</span></a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <a href="index.html"><img src="assets/img/logo.png" style="    margin-top: -85px;
+        margin-left: -35px;
+        max-height: 250px;" alt="" class="img-fluid"></a>
     </div>
 
     <nav class="nav-menu d-none d-lg-block">
       <ul>
-        <li class="active"><a [routerLink]="['']">Home</a></li>
+        <li><a [routerLink]="['']">Home</a></li>
         <li><a [routerLink]="['/about-us']">About</a></li>
         <li><a [routerLink]="['/services']" >Services</a></li>
         <li><a [routerLink]="['/services']" >Reviews</a></li>
@@ -34,9 +39,9 @@
         <li><a [routerLink]="['/contact-us']">Contact</a></li>
         <li class="rxDropDown drop-down"><a >Prescription</a>
           <ul>
-            <li><a href="#">Transfer</a></li>
-            <li><a href="#">Refill</a></li>
-            <li><a href="#">Auto Refill</a></li>
+            <li><a [routerLink]="['/prescription/transfer-rx']">Transfer</a></li>
+            <li><a [routerLink]="['/prescription/refill-rx']">Refill</a></li>
+            <li><a [routerLink]="['/prescription/autofill-rx']">Auto Fill</a></li>
           </ul>
 
         </li>

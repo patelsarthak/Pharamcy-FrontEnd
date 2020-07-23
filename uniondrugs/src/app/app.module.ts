@@ -16,6 +16,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './angular-material.module';
 import { HomeComponent } from './home/home.component';
+import { CovidComponent } from './covid/covid.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HomeComponent } from './home/home.component';
     BlogComponent,
     SpecialsComponent,
     ContactUsComponent,
-    HomeComponent
+    HomeComponent,
+    CovidComponent
   ],
   imports: [
     BrowserModule,

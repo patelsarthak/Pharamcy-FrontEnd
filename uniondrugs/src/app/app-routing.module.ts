@@ -8,6 +8,7 @@ import { BlogComponent } from './blog/blog.component';
 import { SpecialsComponent } from './specials/specials.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HomeComponent } from './home/home.component';
+import { CovidComponent } from './covid/covid.component';
 
 
 const routes: Routes = [
@@ -38,6 +39,10 @@ const routes: Routes = [
   {
     path: 'contact-us',
     component: ContactUsComponent
+  },
+  {
+    path: 'covid-19',
+    component: CovidComponent
   },
   {
     path: 'prescription',

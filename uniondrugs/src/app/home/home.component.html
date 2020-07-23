@@ -5,7 +5,7 @@
     <h2>Outstanding Service, Outstanding you</h2>
     <div class="d-flex align-items-center">
       <i class="bx bxs-right-arrow-alt get-started-icon"></i>
-      <a href="#about" class="btn-get-started scrollto">Transfer Prescription</a>
+      <a [routerLink]="['/prescription/']" class="btn-get-started scrollto">Transfer Prescription</a>
     </div>
   </div>
 </section><!-- End Hero -->
@@ -17,15 +17,20 @@
     <div class="row">
       <div class="col-xl-4 col-lg-5" data-aos="fade-up">
         <div class="content">
-          <h3>Why Choose Flexor for your company website?</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-            Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+          <h3><i class="icofont-quote-left"></i> Why Choose Union Drugs? <i class="icofont-quote-right"></i></h3>
+          <p><i class="icofont-quote-left"></i> 
+            Choosing a local drug store and pharmacy, means you receive the highest-quality and most efficient care for
+            all your prescription requests. Pharmacies like Union Drug work closely with the medical providers in the
+            Gaston County and nearby area, which makes medication requests easier.
           </p>
-          <div class="text-center">
+          <p>
+            When you go the route of working with High End Pharmacies, you have to go back to your doctor for another
+            appointment. This will reduce additional hassle to you and of course save some extra expenses.
+            <i class="icofont-quote-right"></i>
+          </p>
+          <!-- <div class="text-center">
             <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="col-xl-8 col-lg-7 d-flex">
@@ -33,23 +38,130 @@
           <div class="row">
             <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
               <div class="icon-box mt-4 mt-xl-0">
-                <i class="bx bx-receipt"></i>
-                <h4>Corporis voluptates sit</h4>
-                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                <!-- <i class="bx bx-receipt"></i> -->
+                <i class="icofont-pills"></i>
+                <h4>Online Services</h4>
+                <div><p>At union drug we offer hassle free 24X7 access to online services for your prescriptions</p>
+                  <ul class="tile-box-ul">
+                    <li><a [routerLink]="['/prescription/transfer-rx']">Transfer Rx</a></li>
+                    <li><a [routerLink]="['/prescription/refill-rx']">Refill Rx</a></li>
+                    <li><a [routerLink]="['/prescription/autofill-rx']">Auto-Fill Rx</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
               <div class="icon-box mt-4 mt-xl-0">
-                <i class="bx bx-cube-alt"></i>
-                <h4>Ullamco laboris ladore pan</h4>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                <i class="icofont-injection-syringe"></i>
+                <h4>Immunizations ?</h4>
+                <p>Stay up-to-date with your flu, tetnus, pneumonia, and shingles vaccines to prevent any unnecessary illness. Call ahead to ensure we have everything set for you once you arrive. Business owner? We can help your employees get their flu shots by coming directly to you or setting up an appointment for your employees to come to us. Call us today to learn more at (980) 320-1103</p>
               </div>
             </div>
             <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
               <div class="icon-box mt-4 mt-xl-0">
-                <i class="bx bx-images"></i>
-                <h4>Labore consequatur</h4>
-                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                <i class="icofont-speech-comments"></i>
+                <h4>Customer Reviews</h4>
+                <div class="wp-fbrev wpac" style="margin:0 auto!important;">
+                  <div class="wp-facebook-list">
+                    <div class="wp-facebook-place">
+                      <div class="wp-facebook-left">
+                        <img src="https://graph.facebook.com/1598338710428118/picture" alt="Union Drugs" width="50"
+                          height="50" title="Union Drugs">
+                      </div>
+                      <div class="wp-facebook-right">
+                        <div class="wp-facebook-name">
+                          <a href="https://www.facebook.com/uniondrugs/" class="" target="_blank"
+                            rel="nofollow noopener"><span>Union Drugs</span></a> </div>
+                        <div>
+                          <span class="wp-facebook-rating">4.9</span>
+                          <span class="wp-facebook-stars"><span class="wp-stars"><span class="wp-star"><svg
+                                  xmlns="http://www.w3.org/2000/svg" version="1.1" width="16" height="16"
+                                  viewBox="0 0 1792 1792">
+                                  <path
+                                    d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                    fill="#4080ff"></path>
+                                </svg></span><span class="wp-star"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                  width="16" height="16" viewBox="0 0 1792 1792">
+                                  <path
+                                    d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                    fill="#4080ff"></path>
+                                </svg></span><span class="wp-star"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                  width="16" height="16" viewBox="0 0 1792 1792">
+                                  <path
+                                    d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                    fill="#4080ff"></path>
+                                </svg></span><span class="wp-star"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                  width="16" height="16" viewBox="0 0 1792 1792">
+                                  <path
+                                    d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                    fill="#4080ff"></path>
+                                </svg></span><span class="wp-star"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                  width="16" height="16" viewBox="0 0 1792 1792">
+                                  <path
+                                    d="M1250 957l257-250-356-52-66-10-30-60-159-322v963l59 31 318 168-60-355-12-66zm452-262l-363 354 86 500q5 33-6 51.5t-34 18.5q-17 0-40-12l-449-236-449 236q-23 12-40 12-23 0-34-18.5t-6-51.5l86-500-364-354q-32-32-23-59.5t54-34.5l502-73 225-455q20-41 49-41 28 0 49 41l225 455 502 73q45 7 54 34.5t-24 59.5z"
+                                    fill="#4080ff"></path>
+                                </svg></span></span></span>
+                        </div>
+                        <div class="wp-facebook-powered">powered by <span>Facebook</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <section id="grw_widget-3" class="widget google-reviews-widget">
+                  <div class="wp-gr wpac" style="">
+                    <div class="wp-google-list">
+                      <div class="wp-google-place">
+                        <div class="wp-google-left">
+                          <img src="https://maps.gstatic.com/mapfiles/place_api/icons/pharmacy_cross-71.png"
+                            alt="Union Drugs" width="50" height="50" title="Union Drugs">
+                        </div>
+                        <div class="wp-google-right">
+                          <div class="wp-google-name">
+                            <a href="https://maps.google.com/?cid=13729248417869254041" class="" target="_blank"
+                              rel="nofollow noopener"><span>Union Drugs</span></a> </div>
+                          <div>
+                            <span class="wp-google-rating">4.6</span>
+                            <span class="wp-google-stars"><span class="wp-stars"><span class="wp-star"><svg
+                                    xmlns="http://www.w3.org/2000/svg" version="1.1" width="17" height="17"
+                                    viewBox="0 0 1792 1792">
+                                    <path
+                                      d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                      fill="#e7711b"></path>
+                                  </svg></span><span class="wp-star"><svg xmlns="http://www.w3.org/2000/svg"
+                                    version="1.1" width="17" height="17" viewBox="0 0 1792 1792">
+                                    <path
+                                      d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                      fill="#e7711b"></path>
+                                  </svg></span><span class="wp-star"><svg xmlns="http://www.w3.org/2000/svg"
+                                    version="1.1" width="17" height="17" viewBox="0 0 1792 1792">
+                                    <path
+                                      d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                      fill="#e7711b"></path>
+                                  </svg></span><span class="wp-star"><svg xmlns="http://www.w3.org/2000/svg"
+                                    version="1.1" width="17" height="17" viewBox="0 0 1792 1792">
+                                    <path
+                                      d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                      fill="#e7711b"></path>
+                                  </svg></span><span class="wp-star"><svg xmlns="http://www.w3.org/2000/svg"
+                                    version="1.1" width="17" height="17" viewBox="0 0 1792 1792">
+                                    <path
+                                      d="M1250 957l257-250-356-52-66-10-30-60-159-322v963l59 31 318 168-60-355-12-66zm452-262l-363 354 86 500q5 33-6 51.5t-34 18.5q-17 0-40-12l-449-236-449 236q-23 12-40 12-23 0-34-18.5t-6-51.5l86-500-364-354q-32-32-23-59.5t54-34.5l502-73 225-455q20-41 49-41 28 0 49 41l225 455 502 73q45 7 54 34.5t-24 59.5z"
+                                      fill="#e7711b"></path>
+                                  </svg></span></span></span>
+                          </div>
+                          <div class="wp-google-powered">
+                            <img
+                              src="http://www.uniondrugs.us/wp-content/plugins/widget-google-reviews/static/img/powered_by_google_on_white.png"
+                              alt="powered by Google" width="144" height="18" title="powered by Google">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </section>
+
               </div>
             </div>
           </div>
